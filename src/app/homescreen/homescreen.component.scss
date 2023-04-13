@@ -1,0 +1,26 @@
+div {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    padding-left: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p{  
+        margin: 0;
+    }
+
+    .nameTag{
+        font-family: var(--font-bold);
+        font-size: 32px;
+        color: var(--white);
+    }
+    .subline{
+        font-family: var(--font-bold);
+        font-size: 24px;
+        color: var(--blue);
+    }
+}

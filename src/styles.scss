@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/font/Poppins-Regular.ttf);
+
+    font-family: Poppins-Bold;
+    src: url(./assets/font/Poppins-Bold.ttf);
+}
+
+
+:root {
+    --darkblue: #141D2F; 
+    --blue: #4b47ff;
+    --lightblue: #00bee8;
+    --green: #1ce8b6;
+    --white: #ffffff;
+    --font: Poppins, sans-serif;
+    --font-bold: Poppins-Bold, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    background-color: var(--darkblue);
+}
