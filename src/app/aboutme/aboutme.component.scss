@@ -1,0 +1,97 @@
+.aboutmeSection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    z-index: 5;
+    .image {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        // .profileImgArm {
+        //     position: absolute;
+        //     top: 236px;
+        //     left: 92px;
+        //     z-index: 7;
+        //
+        .shape {
+            position: absolute;
+            width: 100%;
+            top: 545px;
+            z-index: 6;
+        }
+        .profileImg{
+            height: 450px;
+        }
+
+    }
+
+    .aboutMe {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 35px;
+
+        z-index: 8;
+        .aboutMeHeader{
+            margin: 0;
+            font-family: var(--font-bold);
+            color: var(--white);
+            font-size: 45px;
+        }
+        .aboutMeContent {
+            color: var(--white);
+            font-weight: 350;
+        }
+        .aboutMeContent2 {
+            display: flex;
+            justify-content: center;
+            .aboutMeIconBulb{
+                display: flex;
+                align-items: center;
+                padding: 20px 30px 20px 20px;
+                
+            }
+            .aboutMeIconPuzzle{
+                display: flex;
+                align-items: center;
+                padding: 20px;
+            }
+            .aboutMeText{
+                color: var(--white);
+                font-weight: 350;
+            }
+        }
+    }
+        
+}
+
+@media (min-width: 1000px) {
+    .aboutmeSection{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        .shape {
+            position: absolute;
+            width: 100%;
+            top: 590px !important;
+            left: 0;
+            z-index: 6;
+        }
+        .profileImg{
+            height: unset !important;
+        }
+        .aboutMeHeader{
+            font-size: 90px !important;
+        }        
+        .aboutMe{
+            width: 500px;
+        }
+    }
+
+
+
+}
