@@ -4,21 +4,52 @@ div {
     height: 100vh;
 
     overflow: hidden;
+
     z-index: 1;
 
     .purpleSphere {
         position: absolute;
         height: 400px;
-        top: 250px;
+        top:320px;
         left: -200px;
     }
 
     .greenSphere {
         position: absolute;
         height: 300px;
-        top: 450px;
+        top: 100px;
         right: -180px;
 
     }
 
+}
+
+@media (min-width: 800px) {
+    .purpleSphere {
+        height: 600px !important;
+        top:225px !important;
+        left: -280px !important;
+    }
+
+    .greenSphere {
+        height: 570px !important;
+        top: 65px !important;
+        right: -320px !important;
+
+    }
+}
+
+@media (min-width: 1100px) {
+    .purpleSphere {
+        height: 800px !important;
+        top:225px !important;
+        left: -280px !important;
+    }
+
+    .greenSphere {
+        height: 770px !important;
+        top: -200px !important;
+        right: -350px !important;
+
+    }
 }
