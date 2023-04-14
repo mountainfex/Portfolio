@@ -1,7 +1,7 @@
 div {
     position: absolute;
     width: 100%;
-    height: 200vh;
+    height: 600vh;
 
     overflow: hidden;
 
@@ -31,6 +31,21 @@ div {
         filter: blur(46.5px);
     }
 
+    .greenSphere2 {
+        position: absolute;
+        height: 300px;
+        top: 3075px;
+        left: -170px;
+        transform: rotate(230deg);
+        }
+
+    .blueSphere {
+        position: absolute;
+        height: 500px;
+        top: 4282px;
+        left: 281px;
+        transform: rotate(174deg);
+    }
 }
 
 @media (min-width: 800px) {
