@@ -1,0 +1,35 @@
+p {
+    margin: 0;
+}
+
+.portfolioSec {
+    display: flex;
+    flex-direction: column;
+    padding: 75px 15px 15px 15px;
+
+    gap: 25px;
+
+    position: relative;
+    z-index: 15;
+
+    .portfolio {
+        display: flex;
+        align-items: center;
+        .line{
+            position: absolute;
+            left: 0;
+            transform: rotate(180deg);
+            width: 15px;
+        }
+        .portfolioHeadline {
+            font-family: var(--font-bold);
+            font-size: 45px;
+            color:var(--white);
+        }
+    }
+
+    .portfolioDescription {
+        color: var(--white);
+        width: 338px;
+    }
+}
