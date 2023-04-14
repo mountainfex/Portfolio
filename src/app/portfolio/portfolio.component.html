@@ -4,18 +4,21 @@
         <p class="portfolioHeadline">Portfolio</p>        
     </div>
     <p class="portfolioDescription">Below you can see some examples of my work - feel free to try them out. </p>
-    <div class="projects" *ngFor="let project of projects; let i = index">
-        <img class="projectImg" src="./../../assets/img/projects/{{project.img}}" alt="">
-        <div>
-            <div class="projectName">{{project.name}}</div>
-            <div class="projectTech">{{project.technologies}}</div>
-            <div class="projectDescription">{{project.description}}</div>
-            <div class="projectLinks">
-                <button class="btnLive">Live test</button>
-                <button class="btnGit">Github</button>
+    <div class="projectMain">
+        <div class="projects" *ngFor="let project of projects; let i = index">
+            <img class="projectImg" src="./../../assets/img/projects/{{project.img}}" alt="">
+            <div class="projectContent">
+                <div class="projectName">{{project.name}}</div>
+                <div class="projectTech">{{project.technologies}}</div>
+                <div class="projectDescription">{{project.description}}</div>
+                <div class="projectLinks">
+                    <button class="btnLive">Live test</button>
+                    <button class="btnGit">Github</button>
+                </div>
+    
             </div>
-
         </div>
     </div>
+   
 
 </div>
