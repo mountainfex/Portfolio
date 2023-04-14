@@ -43,7 +43,7 @@ div {
         position: absolute;
         height: 500px;
         top: 4282px;
-        left: 281px;
+        right: -281px;
         transform: rotate(174deg);
     }
 }
@@ -84,5 +84,19 @@ div {
         top: 1280px !important;
         transform: rotate(35deg);
         filter: blur(46.5px);
+    }
+    .greenSphere2 {
+        height: 600px !important;
+        top: 3075px;
+        left: -265px !important;
+        transform: rotate(28deg) !important;
+        }
+
+    .blueSphere {
+        position: absolute;
+        height: 800px !important;
+        top: 4282px;
+        right: -345px !important;
+        transform: rotate(219deg) !important;
     }
 }
