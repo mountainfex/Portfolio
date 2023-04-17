@@ -5,6 +5,7 @@ p {
 .contactSec {
     display: flex;
     flex-direction: column;
+    padding-top: 75px;
 
     color: var(--white);
 
@@ -93,6 +94,38 @@ p {
                 font-size: 12px;
                 margin: 0;
             }
+        }
+    }
+}
+
+@media (min-width: 1000px) {
+    
+    .contactHeader{
+        .contactHeadline{
+            font-size: 90px !important;
+            font-family: var(--font-bold);
+    }
+    }
+    img{
+        position: absolute;
+        right: 0;
+    }
+    .contactFormContainer {
+        display: flex;
+        justify-content: space-around;
+        padding-top: 75px;
+        .contactContent {
+            justify-content: flex-start;
+            padding: 0;
+            padding-left: 150px;
+            width: 473px;
+            p {
+                font-size: 32px !important;
+            }
+        }
+           
+        input, textarea {
+            width: 620px !important;
         }
     }
 }
