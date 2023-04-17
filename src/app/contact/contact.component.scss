@@ -112,7 +112,7 @@ p {
     }
     .contactFormContainer {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         padding-top: 75px;
         .contactContent {
             justify-content: flex-start;

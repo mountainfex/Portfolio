@@ -1,14 +1,14 @@
 <div class="contactSec">
     <div class="contactHeader">
         <p class="contactHeadline">Contact</p>
-        <img src="./../../assets/img/contact_line.svg" alt="">
+        <!-- <img src="./../../assets/img/contact_line.svg" alt=""> -->
     </div>
 
   <div class="contactFormContainer">
     <div class="contactContent">
         <div class="contactSubline">        
             <p>Got a problem to solve?</p>
-            <img src="./../../assets/img/problem_line.svg" alt="">
+            <!-- <img src="./../../assets/img/problem_line.svg" alt=""> -->
         </div>
         <span class="contactDescription">
             Contact me through this form, I am looking forward to hearing from you, knowing your ideas and contributing to your projects with my work. <br>
@@ -27,10 +27,10 @@
             </div>
             
             <div class="relative">
-                <input formControlName="mail" type="email" placeholder="Your email" required>
+                <input formControlName="email" type="email" placeholder="Your email" required>
                  <ng-container *ngIf="contactForm.controls['email'] as email">
                     <ng-container *ngIf="email.dirty || email.touched">
-                        <p class="error" *ngIf="email.errors?.['required'] || email.errors?.['email']">Your email is required</p>
+                        <p class="error" *ngIf="email.errors?.['required'] || email.errors?.['email']">Your email is required!</p>
                 </ng-container>
             </ng-container>
             </div>

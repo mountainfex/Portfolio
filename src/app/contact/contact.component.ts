@@ -10,7 +10,7 @@ export class ContactComponent {
 
   public contactForm: FormGroup = new FormGroup({
     name: new FormControl('', [Validators.required],[]),
-    mail: new FormControl('', [Validators.required, Validators.email],[]),
+    email: new FormControl('', [Validators.required, Validators.email],[]),
     message: new FormControl('', [Validators.required],[]),
   })
 
