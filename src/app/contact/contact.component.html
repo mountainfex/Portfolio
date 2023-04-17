@@ -11,8 +11,39 @@
         </div>
         <span class="contactDescription">
             Contact me through this form, I am looking forward to hearing from you, knowing your ideas and contributing to your projects with my work. <br>
-            
             <br> Need a Frontend developer? <b>Contact me!</b> </span>
+    </div>
 
+    <div class="contactForm">
+        <form action="" method="post" [formGroup]="contactForm">
+            <div class="relative">
+                <input formControlName="name" type="text" placeholder="Your name" required>
+                <ng-container *ngIf="contactForm.controls['name'] as name">
+                    <ng-container *ngIf="name.dirty || name.touched">
+                        <p class="error" *ngIf="name.errors?.['required']">Your name is required!</p>
+                    </ng-container>
+                </ng-container>
+            </div>
+            
+            <div class="relative">
+                <input formControlName="mail" type="email" placeholder="Your email" required>
+                 <ng-container *ngIf="contactForm.controls['email'] as email">
+                    <ng-container *ngIf="email.dirty || email.touched">
+                        <p class="error" *ngIf="email.errors?.['required'] || email.errors?.['email']">Your email is required</p>
+                </ng-container>
+            </ng-container>
+            </div>
+            
+            <div class="relative">
+                <textarea formControlName="message" rows="10" type="text" placeholder="Your message" required></textarea>
+                <ng-container *ngIf="contactForm.controls['message'] as message">
+                    <ng-container *ngIf="message.dirty || message.touched">
+                        <p class="error" *ngIf="message.errors?.['required']">Your message is required!</p>
+                    </ng-container>
+                </ng-container>
+            </div>
+            
+            <button class="btn" type="submit">Send message!</button>
+        </form>
     </div>
 </div>

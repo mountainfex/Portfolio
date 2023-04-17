@@ -1,7 +1,7 @@
 div {
     position: absolute;
     width: 100%;
-    height: 600vh;
+    height: 700vh;
 
     overflow: hidden;
 
@@ -45,6 +45,14 @@ div {
         top: 4282px;
         right: -281px;
         transform: rotate(174deg);
+    }
+
+    .blueSphere2 {
+        position: absolute;
+        height: 800px;
+        top: 5250px;
+        right: -210px;
+
     }
 }
 
