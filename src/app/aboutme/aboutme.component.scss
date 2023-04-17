@@ -73,7 +73,9 @@
     .aboutmeSection{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 210px;
+        }
         .shape {
             position: absolute;
             width: 100%;
@@ -84,14 +86,14 @@
         .profileImg{
             height: unset !important;
         }
-        .aboutMeHeader{
-            font-size: 90px !important;
-        }        
+      
         .aboutMe{
-            width: 500px;
+            width: 750px;
+            .aboutMeHeader{
+                font-size: 90px !important;
+            }  
+            .aboutMeContent{
+                font-size: 23px !important;
+            }
         }
-    }
-
-
-
 }

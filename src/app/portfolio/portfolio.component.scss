@@ -83,24 +83,24 @@ p {
             }
         }
     }
-    
 }
 
 @media (min-width: 1100px) {
     .portfolioSec{
-        padding-left: 210px;
         .line {
             width: 75px !important;
             height: 5px;
         }
         .portfolioHeadline{
+            padding-left: 210px;
             font-size: 90px !important;
         }
-
+        .portfolioDescription {
+            padding-left: 210px;
+        }
         .projects{
             display: flex;
-            // justify-content: space-evenly !important;
-            gap: 120px;
+            gap: 280px;
             img {
                 width: 620px !important;
             }
@@ -111,7 +111,6 @@ p {
                 align-items: unset !important;
                 text-align: left !important;
             }
-
         }
         .projects:nth-child(even) {
             flex-direction: row-reverse;
