@@ -60,15 +60,14 @@ p {
 
 }
 
-@media (min-width: 1000px) {
-    .skillSec {
-        padding: 75px 15px 15px 15px;
-        display: flex;
-        
-        flex-direction: column;
-        gap: 25px;
-    
-        position: relative;
-        z-index: 15;
-    }
-}
+// @media (min-width: 1000px) {
+//     .skillSec {
+//         flex-direction: row-reverse;
+//         .skills{
+            
+//             .skillsHeadline{
+//                 font-size: 90px !important;
+//             }
+//         }
+//     }
+// }
