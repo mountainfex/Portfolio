@@ -5,7 +5,7 @@ p {
 .portfolioSec {
     display: flex;
     flex-direction: column;
-    padding: 75px 15px 15px 15px;
+    padding: 75px 25px 25px 25px;
 
     gap: 25px;
 
@@ -17,8 +17,7 @@ p {
         align-items: center;
         .line{
             position: absolute;
-            left: 0;
-            width: 15px;
+            left: -28px;
         }
         .portfolioHeadline {
             font-family: var(--font-bold);

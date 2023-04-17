@@ -1,0 +1,43 @@
+p {
+    margin: 0;
+}
+
+.contactSec {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--white);
+    .contactHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .contactHeadline{
+            font-size: 45px;
+            font-family: var(--font-bold);
+        }
+        img{
+            position: absolute;
+            right: 0;
+        }
+    }
+    .contactContent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 25px;
+
+        gap: 10px;
+        .contactSubline {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 23px;
+                font-family: var(--font-bold);
+            }
+            img {
+                position: absolute;
+                left: 0; 
+            }    
+        }   
+    }
+}
