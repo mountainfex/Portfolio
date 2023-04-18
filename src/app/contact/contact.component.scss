@@ -10,7 +10,16 @@ p {
     color: var(--white);
 
     position: relative;
+
+    overflow: hidden;
     z-index: 15;
+    .blueSphere2 {
+        position: absolute;
+        height: 800px;
+        top: 600px;
+        right: -210px;
+        z-index: -1;
+    }
     .contactHeader {
         display: flex;
         justify-content: center;
@@ -101,7 +110,11 @@ p {
 }
 
 @media (min-width: 1000px) {
-    
+    .blueSphere2 {
+        height: 2000px !important;
+        top: 50px !important;
+        right: -551px !important;
+    }
     .contactHeader{
         .contactHeadline{
             font-size: 90px !important;

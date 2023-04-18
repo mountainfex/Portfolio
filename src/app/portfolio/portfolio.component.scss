@@ -10,8 +10,17 @@ p {
     gap: 25px;
 
     position: relative;
+    overflow: hidden;
     z-index: 15;
 
+    .greenSphere2 {
+        position: absolute;
+        height: 300px;
+        top: 200px;
+        left: -170px;
+        transform: rotate(230deg);
+        z-index: -1;
+    }
     .portfolio {
         display: flex;
         align-items: center;
@@ -86,6 +95,12 @@ p {
 
 @media (min-width: 1100px) {
     .portfolioSec{
+        .greenSphere2 {
+        height: 600px !important;
+        top: 200px !important;
+        left: -265px !important;
+        transform: rotate(28deg) !important;
+        }
         .line {
             width: 75px !important;
             height: 5px;
