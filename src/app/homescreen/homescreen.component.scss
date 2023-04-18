@@ -74,8 +74,8 @@
 
 .scrollDown {
     position: absolute;
-    bottom: 100px;
-    left: 25px;
+    bottom: 110px;
+    left: -25px;
     display: flex;
     justify-content: flex-start;
     gap: 15px;
@@ -95,7 +95,7 @@
         }
     
         70% {
-            transform: scale(1.1) rotate(90deg);
+            transform: scale(1.0) rotate(90deg);
         }
     
         100% {

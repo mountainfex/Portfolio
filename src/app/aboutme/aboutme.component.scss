@@ -65,12 +65,17 @@
                 display: flex;
                 align-items: center;
                 padding: 20px 30px 20px 20px;
-                
+                img {
+                    filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg) brightness(98%) contrast(101%);
+                }
             }
             .aboutMeIconPuzzle{
                 display: flex;
                 align-items: center;
                 padding: 20px;
+                img {
+                    filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg) brightness(98%) contrast(101%);
+                }
             }
             .aboutMeText{
                 color: var(--white);
