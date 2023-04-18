@@ -29,6 +29,8 @@
             gap: 50px;
             img {
                 transform: scale(0.8);
+                transition: 225ms ease-in-out;
+                cursor: pointer;
                 &:hover {
                     transform: scale(1.0);
                     transition: 225ms ease-in-out;
