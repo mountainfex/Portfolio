@@ -77,3 +77,22 @@ body {
         background-color: var(--lightblue);
     }
 }
+
+/* Gradient Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #1f2937;
+  }
+  
+  /* Handle */
+    ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(var(--green), var(--lightblue), var(--blue));
+  }

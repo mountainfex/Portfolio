@@ -129,11 +129,12 @@ p {
             font-size: 90px !important;
             font-family: var(--font-bold);
     }
-    }
-    img{
+      img{
         position: absolute;
-        right: 0;
+        right: 0 !important;
     }
+    }
+  
     .contactFormContainer {
         display: flex;
         justify-content: space-evenly;
@@ -145,6 +146,9 @@ p {
             width: 473px;
             p {
                 font-size: 32px !important;
+            }
+            img {
+                left: 0 !important;
             }
         }
            
