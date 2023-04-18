@@ -13,5 +13,4 @@ export class ContactComponent {
     email: new FormControl('', [Validators.required, Validators.email],[]),
     message: new FormControl('', [Validators.required],[]),
   })
-
 }
