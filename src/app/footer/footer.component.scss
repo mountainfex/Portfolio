@@ -24,7 +24,7 @@
             font-size: 18px;
             color: var(--white);
         }
-        .socialLinks {
+        .social {
             display: flex;
             gap: 50px;
             img {
@@ -46,7 +46,29 @@
 }
 
 @media (min-width: 1000px) {
-    .footerContent {
-        flex-direction: row !important;
+    .footerSection {
+        align-items: flex-start;
+        gap: 10px;
+        .footerContent {
+            box-sizing: border-box;
+            padding: 0 20px 0 20px;
+            flex-direction: row !important;
+            justify-content: space-between !important;
+    
+            width: 100%;
+        }
+        .social {
+            img {
+                transform: scale(0.8);
+                &:hover {
+                    transform: scale(1.2);
+                    transition: 225ms ease-in-out;
+                }
+            }
+        }
+        a {
+            padding-left: 35px;
+        }
     }
+    
 }
