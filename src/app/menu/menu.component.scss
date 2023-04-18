@@ -9,7 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 25px 20px;
+    padding: 25px 100px;
 
     z-index: 999;
     
@@ -48,12 +48,8 @@ header {
         &:hover::after {
             transform: scaleX(1);
             transform-origin: bottom left;
-            }
         }
-        
-        
-        
-        
+    }     
 }
 
 @media (min-width: 600px) {
