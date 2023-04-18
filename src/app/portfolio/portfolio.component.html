@@ -1,4 +1,4 @@
-<div class="portfolioSec">
+<div class="portfolioSec" id="portfolio">
     <img class="greenSphere2" src="./../../assets/img/bg/greenShadow_2.png" alt="">
     <div class="portfolio">
         <img class="line" src="./../../assets/img/portfolio_line.svg" alt="">
@@ -13,8 +13,8 @@
                 <div class="projectTech">{{project.technologies}}</div>
                 <div class="projectDescription">{{project.description}}</div>
                 <div class="projectLinks">
-                    <button class="btnLive">Live test</button>
-                    <button class="btnGit">Github</button>
+                    <button class="btnLive" (click)="openNewWindow(project.link)">Live test</button>
+                    <button class="btnGit" (click)="openNewWindow(project.github)">Github</button>
                 </div>
     
             </div>
