@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent {
+  isMenuOpen = false;
 
+  toggleMenu():void {
+    this.isMenuOpen = !this.isMenuOpen;    
+  }
+
+  closeMenu() {
+    this.toggleMenu();
+    const burger = document.getElementById('burger',) as HTMLInputElement | null;
+    if(burger != null){
+      burger.checked = false;
+    }
+  }
 }

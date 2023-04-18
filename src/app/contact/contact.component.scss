@@ -85,7 +85,7 @@ p {
                 &::placeholder {
                     color: var(--white);
                 }                  
-                &.ng-touched, &.ng-dirty{
+                 &.ng-dirty{
                     &.ng-invalid {
                         border: solid 1px red;
                     }

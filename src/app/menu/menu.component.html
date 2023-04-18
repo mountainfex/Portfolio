@@ -1,13 +1,18 @@
 <header>
     <!-- <img class="logo" src="./../../assets/img/logo/logo_light.png" alt=""> -->
     <img class="logo" src="./../../assets/img/logo/logo_long.png" alt="">
-    <img class="menu" src="./../../assets/img/icon/menu/burger.png" alt="">
+    <label class="burger" for="burger">
+        <input type="checkbox" id="burger" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <div class="links">
-        <a class="hover-underline-animation" href="#aboutMe">About me</a>
-        <a class="hover-underline-animation" href="#skills">Skills</a>
-        <a class="hover-underline-animation" href="#portfolio">Portfolio</a>
-        <a class="hover-underline-animation" href="#contact">Contact</a>
+    <div class="links" [class.isOpen]="isMenuOpen">
+        <a class="hover-underline-animation" href="#aboutMe" (click)="closeMenu()">About me</a>
+        <a class="hover-underline-animation" href="#skills" (click)="closeMenu()">Skills</a>
+        <a class="hover-underline-animation" href="#portfolio" (click)="closeMenu()">Portfolio</a>
+        <a class="hover-underline-animation" href="#contact" (click)="closeMenu()">Contact</a>
     </div>
 
 </header>
