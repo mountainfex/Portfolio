@@ -4,6 +4,17 @@
     flex-direction: column;
     padding-top: 150px;
     z-index: 5;
+
+    .profileBgSphere {
+        position: absolute;
+        height: 516px;
+        left: calc(50% - 309px);
+        top: 165px;
+        transform: rotate(27deg);
+        filter: blur(46.5px);
+        z-index: -1;
+    }
+
     .image {
         overflow: hidden;
         display: flex;
@@ -75,6 +86,14 @@
         flex-direction: row-reverse;
         justify-content: space-between;
         padding: 210px;
+        }
+        .profileBgSphere {
+            position: absolute;
+            height: 700px !important;
+            left: unset !important;
+            top: 200px !important;
+            transform: rotate(35deg);
+            filter: blur(46.5px);
         }
         .shape {
             position: absolute;
