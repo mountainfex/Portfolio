@@ -82,18 +82,10 @@ p {
                     .btnLive {
                         width: 152px;
                         height: 58px;
-                        &:active {
-                            color: var(--blue);
-                            background-color: var(--white);
-                        }
                     }
                     .btnGit {
                         width: 137px;
                         height: 58px;
-                        &:active {
-                            color: var(--blue);
-                            background-color: var(--white);
-                        }
                     }
                 }
             }

@@ -43,7 +43,8 @@ body {
         transition: 225ms ease-in-out;
         background-color: var(--blue);
         &:active {
-            background-color: var(----white) !important;
+            color: var(--blue);
+            background-color: var(--white);
         }
     }
     
@@ -64,6 +65,10 @@ body {
         transform: scale(1.2);
         transition: 225ms ease-in-out;
         background-color: var(--lightblue);
+        &:active {
+            color: var(--blue);
+            background-color: var(--white);
+        }
     }
 }
 
@@ -82,6 +87,10 @@ body {
         transform: scale(1.2);
         transition: 225ms ease-in-out;
         background-color: var(--lightblue);
+        &:active {
+            color: var(--blue);
+            background-color: var(--white);
+        }
     }
 }
 
