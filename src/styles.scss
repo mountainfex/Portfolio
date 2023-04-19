@@ -42,7 +42,11 @@ body {
         transform: scale(1.2);
         transition: 225ms ease-in-out;
         background-color: var(--blue);
+        &:active {
+            background-color: var(----white) !important;
+        }
     }
+    
 }
 
 .btnLive {

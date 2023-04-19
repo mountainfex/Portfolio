@@ -84,37 +84,46 @@ p {
 
                 &::placeholder {
                     color: var(--white);
-                }                  
-                //  &.ng-dirty{
-                //     &.ng-invalid {
-                //         border: solid 1px red;
-                //     }
-                //     &.ng-valid {
-                //         border: solid 1px var(--lightblue);
-                //     }
-                // }
+                }
+                &.ng-valid {
+                    border: solid 1px var(--lightblue);
+                }              
             }
             .relative {
                 position: relative;
+                .inputError{                   
+                    position: absolute;
+                    right: 25px;
+                    bottom: 15px;
+                }
+                .textError {
+                    position: absolute;
+                    right: 25px;
+                    top: 15px;
+                }
+                .error {
+                    position: absolute;
+                    bottom: -20px;
+                    color: red;
+                    font-size: 12px;
+                    margin: 0;
+                }
             }
 
-            .error {
-                position: absolute;
-                bottom: -20px;
-                color: red;
-                font-size: 12px;
-                margin: 0;
-            }
+
         }
     }
    .goUpBtn {
     position: absolute;
     bottom: 20px;
     right: 20px;
-    &:hover {
-        transform: scale(1.1);
-        transition: 225ms ease-in-out;
-    }
+        &:hover {
+            transform: scale(1.1);
+            transition: 225ms ease-in-out;
+            &:active {
+                filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg) brightness(98%) contrast(101%);
+            }
+        }
    } 
 }
 
