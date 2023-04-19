@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
+  emailstring = "mailto:niklas.tibbe@outlook.de"
+
   skills = ['Angular', 'TypeScript', 'JavaScript','CSS/SCSS', 'HTML', 'GIT', 'Firebase', 'Scrum', 'Rest-API', 'Material Design']
   skillsImg = ['angular.png', 'typescript.png', 'javascript.png', 'css.png', 'html.png', 'git.png', 'firebase.png', 'scrum.png', 'api.png', 'material.png']
-
 }

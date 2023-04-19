@@ -16,9 +16,8 @@
             </div>
         </div>
 
-        <button class="btn skillbtn">
-        Get in touch
-    </button>
+        <a [href]="emailstring"><button class="btn">Get in touch</button></a>
+        
     </div>
     <div class="skillListDesktop" data-aos="zoom-in" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">
         <div class="skillIcons" *ngFor="let skill of skills; let i = index">
