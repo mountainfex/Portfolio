@@ -85,14 +85,14 @@ p {
                 &::placeholder {
                     color: var(--white);
                 }                  
-                 &.ng-dirty{
-                    &.ng-invalid {
-                        border: solid 1px red;
-                    }
-                    &.ng-valid {
-                        border: solid 1px var(--lightblue);
-                    }
-                }
+                //  &.ng-dirty{
+                //     &.ng-invalid {
+                //         border: solid 1px red;
+                //     }
+                //     &.ng-valid {
+                //         border: solid 1px var(--lightblue);
+                //     }
+                // }
             }
             .relative {
                 position: relative;

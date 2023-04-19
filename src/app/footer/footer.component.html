@@ -2,11 +2,11 @@
     <div class="footerContent">
             <img class="logo" src="./../../assets/img/logo/logo_long.png" alt="">
         <span>© 2023 Niklas Tibbe</span>
-        <div class="social">
-            <img src="./../../assets/img/icon/github.png" alt="">
-            <img src="./../../assets/img/icon/mail.png" alt="">
-            <img src="./../../assets/img/icon/linkedIn.png" alt="">
+        <div class="social" *ngFor="let link of links; let i = index">
+            <img src="./../../assets/img/icon/github.png" alt="" (click)="openNewWindow(link.github)">
+            <a [href]="emailstring"><img src="./../../assets/img/icon/mail.png"></a>
+            <img src="./../../assets/img/icon/linkedIn.png" alt="" (click)="openNewWindow(link.linkedin)">
         </div>
     </div>
-    <a href="#">Imprint</a>
+    <a class="imprintLink" href="#">Imprint</a>
 </div>
