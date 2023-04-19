@@ -3,17 +3,20 @@
         <img class="greenSphere" src="./../../assets/img/bg/greenShadow.png" alt="">
     <div class="row">
         <div class="dev">
-            <p class="name">
+            <p class="name" data-aos="fade-right" data-aos-duration="2500">
                 Niklas Tibbe
             </p>
-            <p class="profession">
+            <p class="profession" data-aos="fade-right" data-aos-duration="2500" data-aos-delay="100">
                 FRONTEND DEVELOPER
             </p>
         </div>
     </div>
-    <button class="btn">Let's talk!</button>
+    <div data-aos="zoom-in" data-aos-duration="2500">
+        <button class="btn">Let's talk!</button>
+    </div>
+    
 
-    <div class="startEnd">
+    <div class="startEnd" data-aos="fade-up" data-aos-anchor="home" data-aos-duration="2500">
         <div class="social" *ngFor="let links of links; let i = index">
             <img src="./../../assets/img/icon/github.png" alt="" (click)="openNewWindow(links.github)">
             <a [href]="emailstring"><img src="./../../assets/img/icon/mail.png"></a>
@@ -21,7 +24,7 @@
         </div>
         <img src="./../../assets/img/line.svg" alt="">
     </div>
-    <div class="scrollDown">
+    <div class="scrollDown" data-aos="zoom-in" data-aos-duration="2500">
         <p class="scrollDownText">Scroll down</p>
         <img class="scrollDownImg" src="./../../assets/img/icon/scrolldown.svg" alt="">
     </div>

@@ -58,6 +58,11 @@
             color: var(--white);
             font-weight: 350;
         }
+        .aboutMeDescription{
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
         .aboutMeContent2 {
             display: flex;
             justify-content: center;
@@ -72,7 +77,7 @@
             .aboutMeIconPuzzle{
                 display: flex;
                 align-items: center;
-                padding: 20px;
+                padding: 18px;
                 img {
                     filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg) brightness(98%) contrast(101%);
                 }

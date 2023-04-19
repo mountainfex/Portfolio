@@ -1,14 +1,14 @@
 <div class="portfolioSec" id="portfolio">
     <img class="greenSphere2" src="./../../assets/img/bg/greenShadow_2.png" alt="">
-    <div class="portfolio">
+    <div class="portfolio" data-aos="fade-right">
         <img class="line" src="./../../assets/img/portfolio_line.svg" alt="">
         <p class="portfolioHeadline">Portfolio</p>        
     </div>
-    <p class="portfolioDescription">Below you can see some examples of my work - feel free to try them out. </p>
+    <p class="portfolioDescription" data-aos="fade-right" >Below you can see some examples of my work - feel free to try them out. </p>
     <div class="projectMain">
         <div class="projects" *ngFor="let project of projects; let i = index">
-            <img class="projectImg" src="./../../assets/img/projects/{{project.img}}" alt="">
-            <div class="projectContent">
+            <img data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1000" class="projectImg" src="./../../assets/img/projects/{{project.img}}" alt="">
+            <div class="projectContent" data-aos="fade-down">
                 <div class="projectName">{{project.name}}</div>
                 <div class="projectTech">{{project.technologies}}</div>
                 <div class="projectDescription">{{project.description}}</div>

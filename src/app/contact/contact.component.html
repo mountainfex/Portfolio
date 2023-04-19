@@ -1,6 +1,6 @@
 <div class="contactSec" id="contact">
     <img class="blueSphere2" src="./../../assets/img/bg/blueShadow_2.png" alt="">
-    <div class="contactHeader">
+    <div class="contactHeader" data-aos="fade-left" data-aos-duration="2000">
         <p class="contactHeadline">Contact</p>
         <img src="./../../assets/img/contact_line.svg" alt="">
     </div>
@@ -16,7 +16,7 @@
             <br> Need a Frontend developer? <b>Contact me!</b> </span>
     </div>
 
-    <div class="contactForm">
+    <div class="contactForm" data-aos="zoom-in" data-aos-duration="2000">
         <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
             <div class="relative">
                 <input formControlName="name" type="text" placeholder="Your name" required>

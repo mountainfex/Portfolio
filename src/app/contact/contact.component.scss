@@ -93,7 +93,15 @@ p {
                 }
                 &.ng-valid {
                     border: solid 1px var(--lightblue);
-                }              
+                }    
+                &:-webkit-autofill,
+                :-webkit-autofill:hover,
+                :-webkit-autofill:focus,
+                :-webkit-autofill:active {
+                    transition: background-color 5000s ease-in-out 0s;
+                    -webkit-text-fill-color: #fff !important;
+                }
+          
             }
             .relative {
                 position: relative;

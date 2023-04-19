@@ -15,14 +15,14 @@ export class PortfolioComponent {
     img: 'pokedex.png',
   }, {
     name: 'Join',
-    technologies: 'JavaScript |  HTML | CSS',
+    technologies: 'JavaScript | HTML | CSS',
     description: 'Task manager inspired by the Kanban system. Creat and organize tasks using drag and drop functions, assing users and categories.',
     link: '',
     github: 'https://github.com/mountainfex/developer_journey_JOIN',
     img: 'join.png',
   }, {
     name: 'Mirkwoods Destiny',
-    technologies: 'JavaScript |  HTML | CSS',
+    technologies: 'JavaScript | HTML | CSS',
     description: 'A simple Jump-and-Run game based on object-oriented programming. Help the elves to find spellbooks and manapotions to beat their enemies.',
     link: '',
     github: 'https://github.com/mountainfex/developer_journey_mirkwoods_destiny',
