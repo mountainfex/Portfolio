@@ -17,9 +17,9 @@
     </div>
 
     <div class="contactForm" data-aos="zoom-in" data-aos-duration="2000">
-        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit(formContact)" #formContact="ngForm">
             <div class="relative">
-                <input formControlName="name" type="text" placeholder="Your name" required>
+                <input formControlName="name" type="text" placeholder="Your name" required id="nameInput">
                 <ng-container *ngIf="myForm.get('name')?.invalid && myForm.get('name')?.touched"><img class="inputError" src="./../../assets/img/icon/invalid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('name')?.valid"><img class="inputError" src="./../../assets/img/icon/valid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('name')?.invalid && isSubmitted">
@@ -29,7 +29,7 @@
             </div>
             
             <div class="relative">
-                <input formControlName="email" type="email" placeholder="Your email" required>
+                <input formControlName="email" type="email" placeholder="Your email" required id="emailInput">
                 <ng-container *ngIf="myForm.get('email')?.invalid && myForm.get('email')?.touched"><img class="inputError" src="./../../assets/img/icon/invalid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('email')?.valid"><img class="inputError" src="./../../assets/img/icon/valid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('email')?.invalid && isSubmitted">
@@ -39,7 +39,7 @@
             </div>
             
             <div class="relative">
-                <textarea formControlName="message" rows="10" type="text" placeholder="Your message" required></textarea>
+                <textarea formControlName="message" rows="10" type="text" placeholder="Your message" required id="messageInput"></textarea>
                 <ng-container *ngIf="myForm.get('message')?.invalid && myForm.get('message')?.touched"><img class="textError" src="./../../assets/img/icon/invalid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('message')?.valid"><img class="textError" src="./../../assets/img/icon/valid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('message')?.invalid && isSubmitted">
@@ -48,7 +48,7 @@
                 </ng-container>
             </div>
             
-            <button class="btn" type="submit">Send message! :)</button>
+            <button class="btn" type="submit" [disabled]="emailSent">Send message! :)</button>
         </form>
     </div>
     <a href="#home"><img class="goUpBtn" src="./../../assets/img/Go up button.svg" alt=""></a>
