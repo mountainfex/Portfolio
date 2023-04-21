@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './homescreen.component.html',
   styleUrls: ['./homescreen.component.scss']
 })
-export class HomescreenComponent {
+export class HomescreenComponent{
   emailstring = "mailto:niklas.tibbe@outlook.de"
 
   links = [{
