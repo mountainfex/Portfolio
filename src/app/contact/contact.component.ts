@@ -19,7 +19,7 @@ export class ContactComponent implements OnInit  {
 
   constructor(private http: HttpClient) {}
   post = {
-    endPoint: 'PFAD ZUR PHP DATEI',
+    endPoint: 'niklastibbe.com/sendmail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

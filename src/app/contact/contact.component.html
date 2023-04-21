@@ -24,7 +24,6 @@
                 <ng-container *ngIf="myForm.get('name')?.valid"><img class="inputError" src="assets/img/icon/valid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('name')?.invalid && isSubmitted">
                         <p class="error">Your name is required!</p>
-                        <img class="inputError" src="assets/img/inputwrong.svg" alt="">
                 </ng-container>
             </div>
             
@@ -34,7 +33,6 @@
                 <ng-container *ngIf="myForm.get('email')?.valid"><img class="inputError" src="assets/img/icon/valid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('email')?.invalid && isSubmitted">
                         <p class="error">Your email is required!</p>
-                        <img class="inputError" src="assets/img/inputwrong.svg" alt="">
                 </ng-container>
             </div>
             
@@ -44,11 +42,10 @@
                 <ng-container *ngIf="myForm.get('message')?.valid"><img class="textError" src="assets/img/icon/valid.svg" alt=""></ng-container>
                 <ng-container *ngIf="myForm.get('message')?.invalid && isSubmitted">
                         <p class="error">Your message is required!</p>
-                        <img class="textError" src="assets/img/inputwrong.svg" alt="">
                 </ng-container>
             </div>
             
-            <button class="btn" type="submit" [disabled]="emailSent">Send message! :)</button>
+            <button class="btn" type="submit" [disabled]="emailSent">Send message</button>
         </form>
     </div>
     <a href="#home"><img class="goUpBtn" src="assets/img/Go up button.svg" alt=""></a>

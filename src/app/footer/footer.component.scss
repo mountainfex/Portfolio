@@ -47,6 +47,9 @@
         text-decoration: none;
         color: var(--white);
     }
+    .legalNoticeLinks{
+        color: var(--white);
+    }
 }
 .hover-underline-animation {
     display: inline-block;
@@ -90,9 +93,10 @@
                 }
             }
         }
-        .imprintLink {
+        .legalNoticeLinks {
             margin-left: 35px;
         }
+
     }
     
 }
