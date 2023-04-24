@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-homescreen',
   templateUrl: './homescreen.component.html',
   styleUrls: ['./homescreen.component.scss']
 })
-export class HomescreenComponent{
+export class HomescreenComponent implements OnInit{
   emailstring = "mailto:niklas.tibbe@outlook.de"
 
   links = [{
@@ -15,6 +16,10 @@ export class HomescreenComponent{
 
   openNewWindow(url: string){
     window.open(url, '_blank');
+  }
+
+  ngOnInit(): void {
+    AOS.init();
   }
 }
 
