@@ -1,14 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit  {
+export class ContactComponent {
   isSubmitted = false;
   emailSent: boolean = false;
 
@@ -30,9 +29,6 @@ export class ContactComponent implements OnInit  {
     },
   };
 
-  ngOnInit(): void {
-    AOS.init();
-  }
 
   onSubmit(ngForm: any) {
     this.isSubmitted = true;

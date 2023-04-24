@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import * as AOS from 'aos';
+import { Component} from '@angular/core';
+
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss']
 })
-export class PortfolioComponent implements OnInit{
+export class PortfolioComponent {
   projects = [{
     name: 'Pokedex',
     technologies: 'JavaScript | Rest-API | HTML | CSS | Bootstrap',
@@ -35,7 +35,4 @@ openNewWindow(url: string){
   window.open(url, '_blank');
 }
 
-ngOnInit(): void {
-  AOS.init();
-}
 }
