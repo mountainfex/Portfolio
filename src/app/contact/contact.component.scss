@@ -30,7 +30,7 @@ p {
         }
         img{
             position: absolute;
-            right: -400px;
+            right: -440px;
         }
     }
     .contactContent {
@@ -86,7 +86,7 @@ p {
                 outline: none;
                 border: solid 1px var(--blue);
                 border-radius: 10px;
-                width: 340px;
+                width: 255px;
 
                 &::placeholder {
                     color: var(--white);

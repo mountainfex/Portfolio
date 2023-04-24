@@ -11,6 +11,7 @@ p {
     color: var(--white);
     .skillContent {
         display: flex;
+        align-items: center;
         flex-direction: column;
         gap: 35px;
         .skills {
@@ -25,7 +26,7 @@ p {
             }
             .line {
                 position: absolute;
-                right: -65px;
+                right: -193px;
             }
         }
         p {
