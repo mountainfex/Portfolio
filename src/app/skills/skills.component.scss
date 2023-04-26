@@ -122,12 +122,16 @@ p {
     }
 }
 
-@media (min-width: 1400px) {
-    .skillListDesktop {
-        padding: 90px !important;
-        display: flex !important;
-        padding-right: unset !important;
-        max-width: 585px !important;
-        gap: 90px !important;
+@media (min-width: 1100px) {
+    .skillContent{
+        align-items: unset !important;
+        .skillListDesktop {
+            padding: 90px !important;
+            display: flex !important;
+            padding-right: unset !important;
+            max-width: 585px !important;
+            gap: 90px !important;
+        }
     }
+
 }
