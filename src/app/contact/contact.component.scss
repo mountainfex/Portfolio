@@ -1,193 +1,219 @@
 p {
-    margin: 0;
+  margin: 0;
 }
 
 .contactSec {
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+
+  color: var(--white);
+
+  position: relative;
+
+  overflow: hidden;
+  z-index: 15;
+  .blueSphere2 {
+    position: absolute;
+    height: 800px;
+    top: 600px;
+    right: -210px;
+    z-index: -1;
+  }
+  .contactHeader {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    .contactHeadline {
+      font-size: 45px;
+      font-family: var(--font-bold);
+    }
+    img {
+      position: absolute;
+      right: -440px;
+    }
+  }
+  .contactContent {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    padding-top: 75px;
+    padding: 25px;
 
-    color: var(--white);
-
-    position: relative;
-
-    overflow: hidden;
-    z-index: 15;
-    .blueSphere2 {
+    gap: 10px;
+    .contactSubline {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 23px;
+        font-family: var(--font-bold);
+      }
+      img {
         position: absolute;
-        height: 800px;
-        top: 600px;
-        right: -210px;
-        z-index: -1;
+        left: -30px;
+      }
     }
-    .contactHeader {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        .contactHeadline{
-            font-size: 45px;
-            font-family: var(--font-bold);
+  }
+  .contactForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+
+      padding-bottom: 75px;
+      &.ng-submitted {
+        input,
+        textarea {
+          &.ng-invalid {
+            border: solid 1px red;
+          }
+          &.ng-valid {
+            border: solid 1px green;
+          }
         }
-        img{
-            position: absolute;
-            right: -440px;
-        }
-    }
-    .contactContent {
+      }
+      .overlayAnchor {
         display: flex;
-        justify-content: center;
         flex-direction: column;
-        padding: 25px;
-
-        gap: 10px;
-        .contactSubline {
-            display: flex;
-            align-items: center;
-            p {
-                font-size: 23px;
-                font-family: var(--font-bold);
-            }
-            img {
-                position: absolute;
-                left: -30px; 
-            }    
-        }   
-    }
-    .contactForm {
-        display: flex;
         align-items: center;
-        justify-content: center;
+        width: 100%;
+        gap: 30px;
+        position: relative;
+        input,
+        textarea {
+          display: flex;
+          align-items: flex-start;
+          padding: 15px 25px;
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
+          font-family: var(--font);
+          font-size: 16px;
+          color: var(--white);
 
-            padding-bottom: 75px;
-            &.ng-submitted {
-                input, textarea {
-                    &.ng-invalid {
-                        border: solid 1px red;
-                    }
-                }
-            }
-            input, textarea {
-                display: flex;
-                align-items: flex-start;
-                padding: 15px 25px;
+          background-color: var(--darkblue);
+          outline: none;
+          border: solid 1px var(--blue);
+          border-radius: 10px;
+          width: 255px;
 
-                font-family: var(--font);
-                font-size: 16px;
-                color: var(--white);
-                
-                background-color: var(--darkblue);
-                outline: none;
-                border: solid 1px var(--blue);
-                border-radius: 10px;
-                width: 255px;
-
-                &::placeholder {
-                    color: var(--white);
-                }
-                &.ng-valid {
-                    border: solid 1px var(--lightblue);
-                }    
-                &:-webkit-autofill,
-                :-webkit-autofill:hover,
-                :-webkit-autofill:focus,
-                :-webkit-autofill:active {
-                    transition: background-color 5000s ease-in-out 0s;
-                    -webkit-text-fill-color: #fff !important;
-                }
-          
-            }
-            .relative {
-                position: relative;
-                .inputError{                   
-                    position: absolute;
-                    right: 25px;
-                    bottom: 15px;
-                }
-                .textError {
-                    position: absolute;
-                    right: 25px;
-                    top: 15px;
-                }
-                .error {
-                    position: absolute;
-                    bottom: -20px;
-                    color: red;
-                    font-size: 12px;
-                    margin: 0;
-                }
-            }
-
-
+          &::placeholder {
+            color: var(--white);
+          }
+          &.ng-valid {
+            border: solid 1px var(--lightblue);
+          }
+          &:-webkit-autofill,
+          :-webkit-autofill:hover,
+          :-webkit-autofill:focus,
+          :-webkit-autofill:active {
+            transition: background-color 5000s ease-in-out 0s;
+            -webkit-text-fill-color: #fff !important;
+          }
         }
+        .relative {
+          position: relative;
+          .inputError {
+            position: absolute;
+            right: 25px;
+            bottom: 15px;
+          }
+          .textError {
+            position: absolute;
+            right: 25px;
+            top: 15px;
+          }
+          .error {
+            position: absolute;
+            bottom: -20px;
+            color: red;
+            font-size: 12px;
+            margin: 0;
+          }
+        }
+        .overlay {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+          background-color: #141d2fe0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     }
-   .goUpBtn {
+  }
+  .goUpBtn {
     position: absolute;
     bottom: 20px;
     right: 20px;
-        &:hover {
-            transform: scale(1.1);
-            transition: 225ms ease-in-out;
-            &:active {
-                filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg) brightness(98%) contrast(101%);
-            }
-        }
-   } 
+    &:hover {
+      transform: scale(1.1);
+      transition: 225ms ease-in-out;
+      &:active {
+        filter: invert(56%) sepia(40%) saturate(2493%) hue-rotate(150deg)
+          brightness(98%) contrast(101%);
+      }
+    }
+  }
 }
 
 @media (min-width: 1000px) {
-    .blueSphere2 {
-        height: 2000px !important;
-        top: 50px !important;
-        right: -551px !important;
+  .blueSphere2 {
+    height: 2000px !important;
+    top: 50px !important;
+    right: -551px !important;
+  }
+  .contactHeader {
+    .contactHeadline {
+      font-size: 90px !important;
+      font-family: var(--font-bold);
     }
-    .contactHeader{
-        .contactHeadline{
-            font-size: 90px !important;
-            font-family: var(--font-bold);
+    img {
+      position: absolute;
+      right: -140px !important;
     }
-      img{
-        position: absolute;
-        right: -140px !important;
+  }
+
+  .contactFormContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 75px;
+    .contactContent {
+      justify-content: flex-start;
+      padding: 0;
+      padding-left: 150px;
+      width: 473px;
+      p {
+        font-size: 32px !important;
+      }
+      img {
+        left: 0 !important;
+      }
     }
+
+    input,
+    textarea {
+      width: 620px !important;
     }
-  
-    .contactFormContainer {
-        display: flex;
-        justify-content: space-evenly;
-        padding-top: 75px;
-        .contactContent {
-            justify-content: flex-start;
-            padding: 0;
-            padding-left: 150px;
-            width: 473px;
-            p {
-                font-size: 32px !important;
-            }
-            img {
-                left: 0 !important;
-            }
-        }
-           
-        input, textarea {
-            width: 620px !important;
-        }
+  }
+  .goUpBtn {
+    position: absolute;
+    bottom: 50px !important;
+    right: 70px !important;
+    cursor: pointer;
+    transition: 225ms ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      transition: 225ms ease-in-out;
     }
-    .goUpBtn {
-        position: absolute;
-        bottom: 50px !important;
-        right: 70px !important;
-        cursor: pointer;
-        transition: 225ms ease-in-out;
-        &:hover {
-            transform: scale(1.1);
-            transition: 225ms ease-in-out;
-        }
-    } 
+  }
 }
